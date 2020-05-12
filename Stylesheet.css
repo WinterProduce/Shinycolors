@@ -1,12 +1,56 @@
-#cover {
-    width: 400px;
-    height: 250px;
-    position: relative;
+/* トップページでスクロールできないように */
+/* html, body{
     overflow: hidden;
+} */
+/* 表紙画像の装飾 */
+.Hyousi{
+    margin-right: 30px;
+    width: 723px;
+    height: 1020px;
+    float: left;
+    overflow: hidden;
+    animation: Fadein 5s ease 0s 1 normal;
+}
+@keyframes Fadein {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
 
-#cover>div {
-    position: absolute;
-    top: 0;
-    opacity: 0;
+/* 目次の装飾 */
+.chapters li{ /*リスト基本設定*/
+    font-size: 1.25em;
+    list-style: none;
+    line-height: 1,125;
+}
+
+.chapters a{
+    font-weight: bold;
+    border: 0;
+    display: inline-block;
+    margin-top: 0.33em;
+}
+/* 文字を真ん中に */
+.center{
+    text-align: center;
+}
+h1.center{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 300%;
+}
+p.center{
+    padding-bottom: 15px;
+    font-size: 150%;
+}
+
+/* ページ分割 */
+.column{
+    height: 100vh;
+    width: 100%;
+}
+/* 縦割りをレスポンシブに */
+@media all and (min-width: 500px){
+    .wrapper{
+        display: flex;
+    }
 }
