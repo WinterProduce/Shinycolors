@@ -9,26 +9,36 @@
     height: 1020px;
     float: left;
     overflow: hidden;
-    animation: Fadein 5s ease 0s 1 normal;
-}
-@keyframes Fadein {
-    0% {opacity: 0}
-    100% {opacity: 1}
 }
 
 /* 目次の装飾 */
+.mokuji ul{
+    display: flex;
+    width: 969px;
+    list-style: none outside;
+    flex-wrap: wrap;
+}
 .chapters li{ /*リスト基本設定*/
+    border: solid 1px #000000;
+    float: left;
+    width: 50%;
     font-size: 1.25em;
     list-style: none;
     line-height: 1,125;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
-
 .chapters a{
     font-weight: bold;
-    border: 0;
-    display: inline-block;
     margin-top: 0.33em;
+    text-decoration: none;
 }
+.mokuji{
+    height: 100vh;
+    text-align: center;
+}
+
 /* 文字を真ん中に */
 .center{
     text-align: center;
