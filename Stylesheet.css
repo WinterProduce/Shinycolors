@@ -2,6 +2,15 @@
 /* html, body{
     overflow: hidden;
 } */
+
+/* フォントの変更 */
+@font-face{
+    font-family: "irohamaru";
+    src: url("/MODI_irohamaru");
+}
+body{
+    font-family: irohamaru;
+}
 /* 表紙画像の装飾 */
 .Hyousi{
     margin-right: 30px;
