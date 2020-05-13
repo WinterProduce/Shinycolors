@@ -6,7 +6,7 @@
 /* フォントの変更 */
 @font-face{
     font-family: 'irohamaru';
-    src: url('/MODI_irohamaru') format('woff');
+    src: url('/MODI_irohamaru.woff') format('woff');
 }
 body{
     font-family: 'irohamaru';
