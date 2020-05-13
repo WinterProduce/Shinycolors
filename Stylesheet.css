@@ -5,11 +5,11 @@
 
 /* フォントの変更 */
 @font-face{
-    font-family: "irohamaru";
-    src: url("/MODI_irohamaru");
+    font-family: 'irohamaru';
+    src: url('/MODI_irohamaru') format('woff');
 }
 body{
-    font-family: irohamaru;
+    font-family: 'irohamaru';
 }
 /* 表紙画像の装飾 */
 .Hyousi{
