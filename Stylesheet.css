@@ -59,13 +59,30 @@ p.center{
     font-size: 150%;
 }
 
-/* ページ分割 */
-.column{
-    height: 100vh;
-    width: 100%;
+/* メイン記事の装飾 */
+
+h2.midasi{
+    margin: 0;
+    font-size: 300%;
+    text-align: center;
 }
-/* 縦割りをレスポンシブに */
-@media all and (min-width: 500px){
+
+.main{
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: solid 5px #7db4e6;
+}
+
+.name{
+    font-size: 200%;
+    padding-left: 5%;
+}
+/* ページ分割 */
+@media screen and (min-width: 767px){
+    .column{
+        height: 100%;
+        width: 100%;
+    }
     .wrapper{
         display: flex;
     }
