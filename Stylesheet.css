@@ -58,7 +58,6 @@ p.center{
     padding-bottom: 30px;
     font-size: 150%;
 }
-
 /* メイン記事の装飾 */
 
 h2.midasi{
@@ -76,6 +75,16 @@ h2.midasi{
 .name{
     font-size: 200%;
     padding-left: 5%;
+}
+
+p{
+    line-height:35px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.okimoti{
+    border: solid 1px #ffbad6;
 }
 /* ページ分割 */
 @media screen and (min-width: 767px){
