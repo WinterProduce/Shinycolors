@@ -99,6 +99,7 @@ p{
 
 .sakuragi{/* 真乃ちゃんの全体の装飾 */
     border: dashed 2px #ffbad6;
+    color: #ffbad6;
     background-color: #f8f0f4;
     border-radius: 20px;
     margin: 2% 0 0 0;
@@ -110,6 +111,7 @@ p{
 
 .kazano{/* 灯織ちゃん */
     border: dashed 2px #144384;
+    color: #144384;
     background-color: #ccd9ec;
     border-radius: 20px;
     margin: 2% 0 0 0;
