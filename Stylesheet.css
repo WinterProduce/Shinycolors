@@ -1,7 +1,3 @@
-/* トップページでスクロールできないように */
-/* html, body{
-    overflow: hidden;
-} */
 
 /* フォントの変更 */
 @font-face{
@@ -10,71 +6,85 @@
 }
 body{
     font-family: 'irohamaru';
-    margin-left: 60px;
-    margin-right: 60px;
 }
 /* 表紙画像の装飾 */
 .Hyousi{
-    margin-right: 20px;
-    width: 723px;
-    height: 1020px;
-    float: left;
-    overflow: hidden;
+    text-align: center;
+    margin: 0;
+    width: 100%;
 }
+@media screen and (min-width: 767px){
+    .Hyousi{
+        width: auto;
+    }
+} 
 
 /* 目次の装飾 */
- .chapters{ /*テーブルタグの枠を均等にする */
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 30px 60px;
-    table-layout: fixed;
-    margin-top: 25px;
-}
-.chapters td{ /*テーブルタグの枠*/
-    width: 100%;
-    border-left: 5px solid #7db4e6;
-    border-bottom: solid 3px #d7d7d7;
-    background-color: #fafafa;
-    padding: 20px 10px 20px 10px;
-}
-.chapters tr{
-    text-align: center;
-}
-.chapters a{
-    font-weight: 800;
-    text-decoration: none;
-    color: #2b2b2b;
-}
-/* 文字を真ん中に */
-.center{
-    text-align: center;
-}
-h1.center{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 300%;
-}
-p.center{
-    padding-bottom: 30px;
+.mokuji{
     font-size: 150%;
+    color: #448ccb;
+    background: #ecf3fa;
+    border: dashed 2px #adcce8;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 3%;
+    /* text-align: center; */
 }
-/* メイン記事の装飾 */
-
-h2.midasi{
+.mokuji2 a{
+    color: #448ccb;
+    text-decoration: none;
+}
+.topmokuji{
+    text-align: left;
+    padding: 0;
+    margin: 3% 0 5% 0;
+}
+.big{
     margin: 0;
+}
+.middle{
+    margin: 0 0 2% 0;
+}
+.small{
+    margin: 0;
+}
+ul{
+    padding: 10px;
+    list-style: none;
+}
+ul li{
+    line-height: 45px;
+    font-weight: bold;
+    max-width: 450px;
+    margin: 0;
+}
+
+/* メイン記事の装飾 */
+.main{
+    max-width: 900px;
+    margin: auto;
+}
+/* h2.midasi{
+    margin-top: 5%;
     font-size: 300%;
     text-align: center;
+    width: 100%;
+} */
+
+h3.name{
+    padding: 0;
+    font-size: 200%;
+    width: 100%;
+}
+
+.kiji{
+    margin: 0 0 2% 0;
 }
 
 .main{
     margin-top: 100px;
     padding-top: 50px;
-    border-top: solid 5px #7db4e6;
-}
-
-.name{
-    font-size: 200%;
-    padding-left: 5%;
 }
 
 p{
@@ -84,15 +94,108 @@ p{
 }
 
 .okimoti{
-    border: solid 1px #ffbad6;
+    padding: 0 3% 0 3%;
 }
-/* ページ分割 */
-@media screen and (min-width: 767px){
-    .column{
-        height: 100%;
-        width: 100%;
-    }
-    .wrapper{
-        display: flex;
-    }
+
+.sakuragi{/* 真乃ちゃんの全体の装飾 */
+    border: dashed 2px #ffbad6;
+    background-color: #f8f0f4;
+    border-radius: 20px;
+    margin: 2% 0 0 0;
+    padding: 0 2% 0 2%;
+}
+.sakuragi>.kiji{
+    border-bottom: dashed 2px #ffbad6;
+}
+
+.kazano{/* 灯織ちゃん */
+    border: dashed 2px #144384;
+    background-color: #ccd9ec;
+    border-radius: 20px;
+    margin: 2% 0 0 0;
+    padding: 0 2% 0 2%;
+}
+.kazano>.kiji{
+    border-bottom: dashed 2px #144384;
+}
+
+.mituimg, .tiyukiimg, .asahiimg, .mizugiimg{
+    width: 60%;
+    height: 60%;
+}
+
+.id{
+    font-size: 130%;
+    width: 100%;
+}
+
+.modoru1{
+    font-size: 150%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1%;
+    color: #448ccb;
+    background: #ecf3fa;
+    border: dashed 2px #adcce8;
+    border-radius: 20px;
+}
+.modoru1::before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0.5em 0 0;
+    border: 10px solid transparent;
+    border-top: 0 solid transparent;
+    border-bottom: 16px solid #448ccb;
+}
+.modoru2{
+    font-size: 150%;
+    position: fixed;
+    bottom: 8%;
+    right: 0;
+    padding: 1%;
+    color: #448ccb;
+    background: #ecf3fa;
+    border: dashed 2px #adcce8;
+    border-radius: 20px;
+}
+.modoru2::before{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 0.5em 0 0;
+    border: 10px solid transparent;
+    border-top: 0 solid transparent;
+    border-bottom: 16px solid #448ccb;
+}
+.modoru1 a,.modoru2 a{
+    color: #448ccb;
+    text-decoration: none;
+}
+/* アイドルメンバーの目次の装飾 */
+
+/* イルミネの目次 */
+.idlelist{
+    background: #f0ede8;
+    color: #ffa700;
+    border: dashed 2px #ffa700;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 3%;
+}
+.idlelist a{
+    color: #ffa700;
+    text-decoration: none;
+}
+div>.irumine>.idlelist>ul{
+    font-size: 150%;
+}
+
+div>.irumine>.idlelist>.midasi{
+    font-size: 300%;
+    margin: 0;
 }
