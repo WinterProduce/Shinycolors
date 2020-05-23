@@ -497,7 +497,7 @@ h3.name{
         border-bottom: 16px solid #448ccb;
     }
     .modoru2{
-        font-size: 150%;
+        font-size: 100%;
         position: fixed;
         right: 0;
         bottom: 0;
@@ -526,7 +526,7 @@ h3.name{
 /* タブレット用 */
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
     .main{
-        font-size: 150%;
+        font-size: 100%;
     }
         p{
         line-height:40px;
