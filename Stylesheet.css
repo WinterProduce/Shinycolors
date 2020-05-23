@@ -330,11 +330,11 @@ h3.name{
 
 /* Bonus content */
 .bonus{
-    border: dashed 2px #b2d468;
-    background-color: #b2d468;
+    border: dashed 2px #d1bb58;
+    background-color: #f8f4e3;
 }
 .bonus>.kiji{
-    border-bottom: dashed 2px #b2d468;
+    border-bottom: dashed 2px #d1bb58;
 }
 
 /* あとがき */
@@ -467,13 +467,13 @@ h3.name{
 /* スマホ用 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
     .main{
-        font-size: 200%;
+        font-size: 150%;
     }
         p{
         line-height:35px;
     }
     .mokuji{
-        font-size: 250%;
+        font-size: 200%;
     }
     .modoru1{
         font-size: 150%;
@@ -526,13 +526,13 @@ h3.name{
 /* タブレット用 */
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
     .main{
-        font-size: 200%;
+        font-size: 150%;
     }
         p{
         line-height:40px;
     }
     .mokuji{
-        font-size: 250%;
+        font-size: 200%;
     }
     .modoru1{
         font-size: 150%;
