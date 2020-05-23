@@ -6,6 +6,8 @@
 }
 body{
     font-family: 'irohamaru';
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 /* 表紙画像の装飾 */
 .Hyousi{
@@ -13,11 +15,6 @@ body{
     margin: 0;
     width: 100%;
 }
-@media screen and (min-width: 767px){
-    .Hyousi{
-        width: auto;
-    }
-} 
 
 /* 目次の装飾 */
 .mokuji{
@@ -64,13 +61,10 @@ ul li{
 .main{
     max-width: 900px;
     margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+    font-size: 120%;
 }
-/* h2.midasi{
-    margin-top: 5%;
-    font-size: 300%;
-    text-align: center;
-    width: 100%;
-} */
 
 h3.name{
     padding: 0;
@@ -82,28 +76,22 @@ h3.name{
     margin: 0 0 2% 0;
 }
 
-.main{
-    margin-top: 100px;
-    padding-top: 50px;
-}
-
-p{
-    line-height:35px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
 .okimoti{
     padding: 0 3% 0 3%;
 }
 
-.sakuragi{/* 真乃ちゃんの全体の装飾 */
-    border: dashed 2px #ffbad6;
-    color: #ffbad6;
-    background-color: #f8f0f4;
+/* お気持ち表明の記事全体の装飾 */
+.all{
     border-radius: 20px;
-    margin: 2% 0 0 0;
+    margin: 8% 0 10% 0;
     padding: 0 2% 0 2%;
+}
+
+/* 真乃ちゃんの全体の装飾 */
+.sakuragi{
+    border: dashed 2px #ffbad6;
+    /* color: #ffbad6; */
+    background-color: #f8f0f4;
 }
 .sakuragi>.kiji{
     border-bottom: dashed 2px #ffbad6;
@@ -111,93 +99,511 @@ p{
 
 .kazano{/* 灯織ちゃん */
     border: dashed 2px #144384;
-    color: #144384;
+    /* color: #144384; */
     background-color: #ccd9ec;
-    border-radius: 20px;
-    margin: 2% 0 0 0;
-    padding: 0 2% 0 2%;
 }
 .kazano>.kiji{
     border-bottom: dashed 2px #144384;
 }
 
-.mituimg, .tiyukiimg, .asahiimg, .mizugiimg{
+/* めぐるちゃん */
+.meguru{
+    border: dashed 2px #ffe012;
+    background-color: #f8f4d6;
+}
+
+/* 恋鐘ちゃん */
+.kogane{
+    border: dashed 2px #f84cad;
+    background-color: #faeaf3;
+}
+.kogane>.kiji{
+    border-bottom: dashed 2px #f84cad;
+}
+
+/* まみみ */
+.mamimi{
+    border: dashed 2px #a846fb;
+    background-color: #eeddfc;
+}
+.mamimi>.kiji{
+    border-bottom: dashed 2px #a846fb;
+}
+
+/* さくやさん */
+.sakuya{
+    border: dashed 2px #006047;
+    background-color: #cffaee;
+}
+.sakuya>.kiji{
+    border-bottom: dashed 2px #006047;
+}
+
+/* みつみね */
+.mitumine{
+    border: dashed 2px #3b91c4;
+    background-color: #c5e3f5;
+}
+.mitumine>.kiji{
+    border-bottom: dashed 2px #3b91c4;
+}
+
+/* 霧子ちゃん */
+.kiriko{
+    border: dashed 2px #bce3f8;
+    background-color: #f5f9fc;
+}
+.kiriko>.kiji{
+    border-bottom: dashed 2px #bce3f8;
+}
+
+/* 果穂ちゃん */
+.kaho{
+    border: dashed 2px #e5461c;
+    background-color: #fcece8;
+}
+.kaho>.kiji{
+    border-bottom: dashed 2px #e5461c;
+}
+
+/* ちょこせんぱい */
+.tyoko{
+    border: dashed 2px #f93b90;
+    background-color: #fdeaf3;
+}
+.tyoko>.kiji{
+    border-bottom: dashed 2px #f93b90;
+}
+
+/* 樹里ちゃん */
+.jyuri{
+    border: dashed 2px #ffc602;
+    background-color: #fdf9ec;
+}
+.jyuri>.kiji{
+    border-bottom: dashed 2px #ffc602;
+}
+
+/* りんぜちゃん */
+.rinze{
+    border: dashed 2px #89c3eb;
+    background-color: #dff2ff;
+}
+.rinze>.kiji{
+    border-bottom: dashed 2px #89c3eb;
+}
+
+/* なつはさん */
+.natuha{
+    border: dashed 2px #90e667;
+    background-color: #e9fde0;
+}
+.natuha>.kiji{
+    border-bottom: dashed 2px #90e667;
+}
+
+/* あまなちゃん */
+.amana{
+    border: dashed 2px #f54275;
+    background-color: #faedf0;
+}
+.amana>.kiji{
+    border-bottom: dashed 2px #f54275;
+}
+
+/* てんかちゃん */
+.tenka{
+    border: dashed 2px #e75bec;
+    background-color: #fbe4fc;
+}
+.tenka>.kiji{
+    border-bottom: dashed 2px #e75bec;
+}
+
+/* 千雪さん */
+.tiyuki{
+    border: dashed 2px #fad3d3;
+    background-color: #f8e6e6;
+}
+.tiyuki>.kiji{
+    border-bottom: dashed 2px #f5e7e7;
+}
+
+/* あさひちゃん */
+.asahi{
+    border: dashed 2px #f30100;
+    background-color: #ffe8e8;
+}
+.asahi>.kiji{
+    border-bottom: dashed 2px #f30100;
+}
+
+/* ふゆちゃん */
+.huyuko{
+    border: dashed 2px #5ce626;
+    background-color: #edffe6;
+}
+.huyuko>.kiji{
+    border-bottom: dashed 2px #5ce626;
+}
+
+/* あいちゃん */
+.ai{
+    border: dashed 2px #ff00ff;
+    background-color: #fce2fc;
+}
+.ai>.kiji{
+    border-bottom: dashed 2px #ff00ff;
+}
+
+/* 透ちゃん */
+.touru{
+    border: dashed 2px #50d0d0;
+    background-color: #dbf5f5;
+}
+.touru>.kiji{
+    border-bottom: dashed 2px #50d0d0;
+}
+
+/* まどかちゃん */
+.madoka{
+    border: dashed 2px #be1e3e;
+    background-color: #f7eaec;
+}
+.madoka>.kiji{
+    border-bottom: dashed 2px #be1e3e;
+}
+
+/* 小糸ちゃん */
+.koito{
+    border: dashed 2px #7967c3;
+    background-color: #ece9fc;
+}
+.koito>.kiji{
+    border-bottom: dashed 2px #7967c3;
+}
+
+/* ひなちゃん */
+.hina{
+    border: dashed 2px #ffc639;
+    background-color: #fdf7e8;
+}
+.hina>.kiji{
+    border-bottom: dashed 2px #ffc639;
+}
+
+/* 283 */
+.p283p{
+    border: dashed 2px #8adfff;
+    background-color: #eaf9ff;
+}
+.p283p>.kiji{
+    border-bottom: dashed 2px #8adfff;
+}
+
+/* プロデューサー */
+.pro{
+    border: dashed 2px #c5a40e;
+    background-color: #fdfdeb;
+}
+.pro>.kiji{
+    border-bottom: dashed 2px #c5a40e;
+}
+
+/* はづきさん */
+.hazuki{
+    border: dashed 2px #7ea8f7;
+    background-color: #e8effd;
+}
+.hazuki>.kiji{
+    border-bottom: dashed 2px #7ea8f7;
+}
+
+/* 社長 */
+.syatyou{
+    border: dashed 2px #f70fbd;
+    background-color: #ffeaf9;
+}
+.syatyou>.kiji{
+    border-bottom: dashed 2px #f70fbd;
+}
+
+/* お気持ち中の写真の装飾 */
+.mituimg, .tiyukiimg, .asahiimg, .mizugiimg, .kirikoimg{
     width: 60%;
     height: 60%;
 }
 
+/* 投稿者名の装飾 */
 .id{
     font-size: 130%;
     width: 100%;
 }
 
-.modoru1{
-    font-size: 150%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 1%;
-    color: #448ccb;
-    background: #ecf3fa;
-    border: dashed 2px #adcce8;
-    border-radius: 20px;
-}
-.modoru1::before{
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin: 0 0.5em 0 0;
-    border: 10px solid transparent;
-    border-top: 0 solid transparent;
-    border-bottom: 16px solid #448ccb;
-}
-.modoru2{
-    font-size: 150%;
-    position: fixed;
-    bottom: 8%;
-    right: 0;
-    padding: 1%;
-    color: #448ccb;
-    background: #ecf3fa;
-    border: dashed 2px #adcce8;
-    border-radius: 20px;
-}
-.modoru2::before{
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin: 0 0.5em 0 0;
-    border: 10px solid transparent;
-    border-top: 0 solid transparent;
-    border-bottom: 16px solid #448ccb;
-}
-.modoru1 a,.modoru2 a{
-    color: #448ccb;
-    text-decoration: none;
-}
 /* アイドルメンバーの目次の装飾 */
 
-/* イルミネの目次 */
-.idlelist{
-    background: #f0ede8;
-    color: #ffa700;
-    border: dashed 2px #ffa700;
+/* アイドル目次の全体の装飾 */
+.idlelist1, .idlelist2, .idlelist3, .idlelist4, .idlelist5, .idlelist6, .idlelist7{
     border-radius: 20px;
     max-width: 900px;
     margin: auto;
     padding: 3%;
 }
-.idlelist a{
-    color: #ffa700;
+.idlelist1 a, .idlelist2 a, .idlelist3 a, .idlelist4 a, .idlelist5 a, .idlelist6 a, .idlelist7 a{
     text-decoration: none;
 }
-div>.irumine>.idlelist>ul{
+.idlelist1>ul, .idlelist2>ul, .idlelist3>ul, .idlelist4>ul, .idlelist5>ul, .idlelist6>ul, .idlelist7>ul{
     font-size: 150%;
 }
-
-div>.irumine>.idlelist>.midasi{
+.idlelist1>.midasi, .idlelist2>.midasi, .idlelist3>.midasi, .idlelist4>.midasi, .idlelist5>.midasi, .idlelist6>.midasi, .idlelist7>.midasi{
     font-size: 300%;
     margin: 0;
+}
+
+/* イルミネの目次 */
+.idlelist1{
+    background: #fdf7ed;
+    color: #ffa700;
+    border: dashed 2px #ffa700;
+}
+.idlelist1 a{
+    color: #ffa700;
+}
+
+/* Anticaの目次 */
+.idlelist2{
+    background: #ebd7f0;
+    color: #853998;
+    border: dashed 2px #853998;
+}
+.idlelist2 a{
+    color: #853998;
+}
+
+/* 放課後クライマックスの目次 */
+.idlelist3{
+    background: #f1d4c0;
+    color: #fa8333;
+    border: dashed 2px #fa8333;
+}
+.idlelist3 a{
+    color: #fa8333;
+}
+
+/* アルストロメリアの目次 */
+.idlelist4{
+    background: #f3ccdc;
+    color: #e43b80;
+    border: dashed 2px #e43b80;
+}
+.idlelist4 a{
+    color: #e43b80;
+}
+
+/* ストレイライトの目次 */
+.idlelist5{
+    background: #f3d2d2;
+    color: #e71212;
+    border: dashed 2px #e71212;
+}
+.idlelist5 a{
+    color: #e71212;
+}
+
+/* ノクチルの目次 */
+.idlelist6{
+    background: #d1ddf0;
+    color: #1e50a2;
+    border: dashed 2px #1e50a2;
+}
+.idlelist6 a{
+    color: #1e50a2;
+}
+
+/* 283プロの目次 */
+.idlelist7{
+    background: #e1fff7;
+    color: #52c2a2;
+    border: dashed 2px #42f5c2;
+}
+.idlelist7 a{
+    color: #52c2a2;
+}
+/* Footerの装飾 */
+.credit{
+    text-align: center;
+}
+
+/* レスポンシブCSS */
+/* スマホ用 */
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .main{
+        font-size: 200%;
+    }
+        p{
+        line-height:35px;
+    }
+    .mokuji{
+        font-size: 250%;
+    }
+    .modoru1{
+        font-size: 150%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru1::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru2{
+        font-size: 150%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru2::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru1 a,.modoru2 a{
+        color: #448ccb;
+        text-decoration: none;
+    }
+}
+
+/* タブレット用 */
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+    .main{
+        font-size: 150%;
+    }
+        p{
+        line-height:40px;
+    }
+    .mokuji{
+        font-size: 250%;
+    }
+    .modoru1{
+        font-size: 150%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru1::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru2{
+        font-size: 150%;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru2::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru1 a,.modoru2 a{
+        color: #448ccb;
+        text-decoration: none;
+    }
+}
+/* PC用 */
+@media screen and (min-width: 767px){
+    .Hyousi{
+        width: auto;
+    }
+    p{
+        line-height:40px;
+    }
+    .modoru1{
+        font-size: 150%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru1::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru2{
+        font-size: 150%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        padding: 1%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+    }
+    .modoru2::before{
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin: 0 0.5em 0 0;
+        border: 10px solid transparent;
+        border-top: 0 solid transparent;
+        border-bottom: 16px solid #448ccb;
+    }
+    .modoru1 a,.modoru2 a{
+        color: #448ccb;
+        text-decoration: none;
+    }
 }
