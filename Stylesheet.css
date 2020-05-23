@@ -151,10 +151,10 @@ h3.name{
 /* 霧子ちゃん */
 .kiriko{
     border: dashed 2px #bce3f8;
-    background-color: #f5f9fc;
+    background-color: #e4f0f8;
 }
 .kiriko>.kiji{
-    border-bottom: dashed 2px #bce3f8;
+    border-bottom: dashed 2px #a2daf8;
 }
 
 /* 果穂ちゃん */
@@ -321,11 +321,29 @@ h3.name{
 
 /* 社長 */
 .syatyou{
-    border: dashed 2px #f70fbd;
-    background-color: #ffeaf9;
+    border: dashed 2px #00008b;
+    background-color: #dadaf0;
 }
 .syatyou>.kiji{
-    border-bottom: dashed 2px #f70fbd;
+    border-bottom: dashed 2px #00008b;
+}
+
+/* Bonus content */
+.bonus{
+    border: dashed 2px #b2d468;
+    background-color: #b2d468;
+}
+.bonus>.kiji{
+    border-bottom: dashed 2px #b2d468;
+}
+
+/* あとがき */
+.atogaki{
+    border: dashed 2px #7058a3;
+    background-color: #ede9f8;
+}
+.atogaki>.kiji{
+    border-bottom: dashed 2px #7058a3;
 }
 
 /* お気持ち中の写真の装飾 */
@@ -343,19 +361,19 @@ h3.name{
 /* アイドルメンバーの目次の装飾 */
 
 /* アイドル目次の全体の装飾 */
-.idlelist1, .idlelist2, .idlelist3, .idlelist4, .idlelist5, .idlelist6, .idlelist7{
+.idlelist1, .idlelist2, .idlelist3, .idlelist4, .idlelist5, .idlelist6, .idlelist7, .idlelist8{
     border-radius: 20px;
     max-width: 900px;
     margin: auto;
     padding: 3%;
 }
-.idlelist1 a, .idlelist2 a, .idlelist3 a, .idlelist4 a, .idlelist5 a, .idlelist6 a, .idlelist7 a{
+.idlelist1 a, .idlelist2 a, .idlelist3 a, .idlelist4 a, .idlelist5 a, .idlelist6 a, .idlelist7 a, .idlelist8 a{
     text-decoration: none;
 }
-.idlelist1>ul, .idlelist2>ul, .idlelist3>ul, .idlelist4>ul, .idlelist5>ul, .idlelist6>ul, .idlelist7>ul{
+.idlelist1>ul, .idlelist2>ul, .idlelist3>ul, .idlelist4>ul, .idlelist5>ul, .idlelist6>ul, .idlelist7>ul, .idlelist8>ul{
     font-size: 150%;
 }
-.idlelist1>.midasi, .idlelist2>.midasi, .idlelist3>.midasi, .idlelist4>.midasi, .idlelist5>.midasi, .idlelist6>.midasi, .idlelist7>.midasi{
+.idlelist1>.midasi, .idlelist2>.midasi, .idlelist3>.midasi, .idlelist4>.midasi, .idlelist5>.midasi, .idlelist6>.midasi, .idlelist7>.midasi, .idlelist8>.midasi{
     font-size: 300%;
     margin: 0;
 }
@@ -424,14 +442,25 @@ h3.name{
 .idlelist7{
     background: #e1fff7;
     color: #52c2a2;
-    border: dashed 2px #42f5c2;
+    border: dashed 2px #52c2a2;
 }
 .idlelist7 a{
     color: #52c2a2;
 }
+
+/* And moreの装飾 */
+.idlelist8{
+    background: #f5fce7;
+    color: #aad64c;
+    border: dashed 2px #aad64c;
+}
+.idlelist8 a{
+    color: #aad64c;
+}
 /* Footerの装飾 */
 .credit{
     text-align: center;
+    font-size: 110%;
 }
 
 /* レスポンシブCSS */
