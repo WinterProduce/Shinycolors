@@ -497,7 +497,7 @@ h3.name{
 /* タブレット用 */
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
     .main{
-        font-size: 150%;
+        font-size: 200%;
     }
         p{
         line-height:40px;
