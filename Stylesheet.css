@@ -467,16 +467,16 @@ h3.name{
 /* スマホ用 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
     .main{
-        font-size: 150%;
+        font-size: 100%;
     }
         p{
         line-height:35px;
     }
     .mokuji{
-        font-size: 200%;
+        font-size: 100%;
     }
     .modoru1{
-        font-size: 150%;
+        font-size: 100%;
         position: fixed;
         top: 0;
         right: 0;
@@ -532,10 +532,10 @@ h3.name{
         line-height:40px;
     }
     .mokuji{
-        font-size: 200%;
+        font-size: 100%;
     }
     .modoru1{
-        font-size: 150%;
+        font-size: 100%;
         position: fixed;
         top: 0;
         right: 0;
@@ -556,7 +556,7 @@ h3.name{
         border-bottom: 16px solid #448ccb;
     }
     .modoru2{
-        font-size: 150%;
+        font-size: 100%;
         position: fixed;
         right: 0;
         bottom: 0;
