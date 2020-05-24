@@ -61,6 +61,25 @@ body{
 .small{
     margin: 0;
 }
+.topmokuji a{
+    padding: 4.5px 0 4.5px 0;
+    font-weight: bold;
+    max-width: 450px;
+    margin: 0;
+    display: block;
+}
+.idlemokuji{
+    padding: 10px;
+    list-style: none;
+    margin: 5% 0 0 0;
+}
+.idlemokuji a{
+    line-height: 45px;
+    font-weight: bold;
+    max-width: 450px;
+    margin: 0;
+    display: block;
+}
 ul{
     padding: 10px;
     list-style: none;
@@ -389,7 +408,7 @@ h3.name{
 .idlelist1 a, .idlelist2 a, .idlelist3 a, .idlelist4 a, .idlelist5 a, .idlelist6 a, .idlelist7 a, .idlelist8 a{
     text-decoration: none;
 }
-.idlelist1>ul, .idlelist2>ul, .idlelist3>ul, .idlelist4>ul, .idlelist5>ul, .idlelist6>ul, .idlelist7>ul, .idlelist8>ul{
+.idlelist1>.idlemokuji, .idlelist2>.idlemokuji, .idlelist3>.idlemokuji, .idlelist4>.idlemokuji, .idlelist5>.idlemokuji, .idlelist6>.idlemokuji, .idlelist7>.idlemokuji, .idlelist8>.idlemokuji{
     font-size: 150%;
 }
 .idlelist1>.midasi, .idlelist2>.midasi, .idlelist3>.midasi, .idlelist4>.midasi, .idlelist5>.midasi, .idlelist6>.midasi, .idlelist7>.midasi, .idlelist8>.midasi{

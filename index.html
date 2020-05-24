@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <link rel="stylesheet" href="Stylesheet.css">
   <meta charset="UTF-8">
   <meta name="description" content="シャニマスお気持ち表明アンソロジー企画">
   <meta name="keywords" content="シャニマス,お気持ち表明,アイドル,アイマス,アイドルマスター">
-  <meta http-equiv="Content-Style-Type" content="text/css">
   <meta name="author" content="さまーいれーす">
+  <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+  <meta http-equiv="content-language" content="ja">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="Stylesheet.css">
 
   <title>怪文書</title>
 </head>
@@ -16,23 +17,23 @@
     <div class="Hyousi"><img src="images/Hyousi.JPG" alt="Hyousi" class="Hyousi"></div>
       <div class="mokuji">
         <div class="mokuji1">
-          <a name="groupmokuji"></a>
+          <a id="groupmokuji"></a>
           <h1 class="big">『怪文書』</h1>
           <p class="middle">シャニマスお気持ち表明アンソロジー企画</p>
           <p class="small">目次</p>
           <p class="small">(クリックするとスクロールします)</p>
         </div>
         <div class="mokuji2">
-          <ul class="topmokuji">
-            <a href="#irumine"><li>イルミネーションスターズ</li></a>
-            <a href="#antica"><li>L'Antica</li></a>
-            <a href="#houkago"><li>放課後クライマックスガールズ</li></a>
-            <a href="#arusuto"><li>アルストロメリア</li></a>
-            <a href="#stray"><li>Straylight</li></a>
-            <a href="#nokutiru"><li>ノクチル</li></a>
-            <a href="#283"><li>283プロダクション</li></a>
-            <a href="#andmore"><li>And More</li></a>
-          </ul>
+          <div class="topmokuji">
+            <a href="#irumine">イルミネーションスターズ</a>
+            <a href="#antica">L'Antica</a>
+            <a href="#houkago">放課後クライマックスガールズ</a>
+            <a href="#arusuto">アルストロメリア</a>
+            <a href="#stray">Straylight</a>
+            <a href="#nokutiru">ノクチル</a>
+            <a href="#production">283プロダクション</a>
+            <a href="#andmore">And More</a>
+          </div>
         </div>
         <div class="note">
           本文中画像引用元<br>
@@ -46,15 +47,15 @@
   <div class="modoru1"><a href="#groupmokuji">目次へ戻る</a></div>
   <div class="main">
     <div class="irumine">
-      <a name="irumine"></a>
+      <a id="irumine"></a>
       <div class="idlelist1">
         <h2 class="midasi">イルミネーションスターズ</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#sakuragi"><li>櫻木真乃</li></a>
-          <a href="#kazano"><li>風野灯織</li></a>
-          <a href="#meguru"><li>八宮めぐる</li></a>
-        </ul>
+        <div class="idlemokuji">
+          <a href="#sakuragi">櫻木真乃</a>
+          <a href="#kazano">風野灯織</a>
+          <a href="#meguru">八宮めぐる</a>
+        </div>
       </div>
       <a name="sakuragi"></a>
       <div class="sakuragi all">
@@ -149,7 +150,7 @@
         </div>
       </div>
       <div class="kazano all">
-        <a name="kazano"></a>
+        <a id="kazano"></a>
         <h3 class="name">〇風野灯織</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -257,7 +258,7 @@
         </div>
       </div>
       <div class="meguru all">
-        <a name="meguru"></a>
+        <a id="meguru"></a>
         <h3 class="name">〇八宮めぐる</h3>
         <div class="kiji">
           <div class="id">ココア@クリエイター部さん(@cocoa_mouso)</div>
@@ -332,20 +333,20 @@
       </div>
     </div>
     <div class="antica">
-      <a name="antica"></a>
+      <a id="antica"></a>
       <div class="idlelist2">
         <h2 class="midasi">L'Antica</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#kogane"><li>月岡恋鐘</li></a>
-          <a href="#mamimi"><li>田中摩美々</li></a>
-          <a href="#sakuya"><li>白瀬咲耶</li></a>
-          <a href="#mitumine"><li>三峰結華</li></a>
-          <a href="#kiriko"><li>幽谷霧子</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#kogane">月岡恋鐘</a>
+          <a href="#mamimi">田中摩美々</a>
+          <a href="#sakuya">白瀬咲耶</a>
+          <a href="#mitumine">三峰結華</a>
+          <a href="#kiriko">幽谷霧子</a>
+        </div>
       </div>
       <div class="kogane all">
-        <a name="kogane"></a>
+        <a id="kogane"></a>
         <h3 class="name">〇月岡恋鐘</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -387,7 +388,7 @@
               それはなぜか、ついに待ちに待った<br>
               長崎の凱旋イベントがここで来ると考えているからです。<br>
               まず月岡恋鐘について復習です。<br>
-              アンティーカのリーダーである月岡恋鐘は、ば～りばりに可愛い我らがリーダーであり、<br><br>
+              アンティーカのリーダーである月岡恋鐘は、ば～りばりに可愛い我らがリーダーであり、<br>
               アンティーカの一番原動力のある歯車であり<br>
               そして、親の反対を押し切って上京し、空白の一年があるアイドルです。<br>
               元々明るく元気な姿や、可愛らしいおっちょこちょいな魅力に惑わされますが<br>
@@ -433,7 +434,7 @@
         </div>
       </div>
       <div class="mamimi all">
-        <a name="mamimi"></a>
+        <a id="mamimi"></a>
         <h3 class="name">〇田中摩美々</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -517,7 +518,7 @@
         </div>
       </div>
       <div class="sakuya all">
-        <a name="sakuya"></a>
+        <a id="sakuya"></a>
         <h3 class="name">〇白瀬咲耶</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -563,7 +564,7 @@
         </div>
       </div>
       <div class="mitumine all">
-        <a name="mitumine"></a>
+        <a id="mitumine"></a>
         <h3 class="name">〇三峰結華</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -766,7 +767,7 @@
               彼女が内に秘めた心の壁を取り払った訳でも、ましてや恋愛感情などというものではない<br>
               彼女の本質は何一つ変わっていないと"強く意識し続けること"だった。<br>
               彼女なんら変化していない。<br>
-              あくまでアイドル活動を通してPの「関係性」が少し変わっただけで、彼女の根本は一切変わっていない。<br>
+              あくまでアイドル活動を通してPの「関係性」が少���変わっただけで、彼女の根本は一切変わっていない。<br>
               僕が最初に愛した彼女そのものだ、と僕見方の方をねじ曲げた。<br>
               （冷静に読めばあれが親愛の証であるという解釈自体は別段特殊でもないように思うが<br>
               この解釈を僕は『ガチ恋路線』を真っ向から否定するための根拠として使っていた節がある）</p>
@@ -957,9 +958,9 @@
               そして、終始気の重い雰囲気で話が進み、最後には結局結華いつもの調子に戻る。<br>
               しかし、その起承転結を見届けた後もどこかしこりが残るような哀愁に包まれていく。<br>
             </p>
-            <div><img src="images/mitumine1.png" class="mituimg1"></div>
+            <div><img src="images/mitumine1.png" class="mituimg1" alt="mitumine"></div>
             <p>(コミュ１：［これが間違いなんだとしたら］冒頭)</p>
-            <div><img src="images/mitumine2.png" class="mituimg2"></div>
+            <div><img src="images/mitumine2.png" class="mituimg2" alt="mitumine"></div>
             <p>(コミュ3：［雨の中（二度目の）正解をくれた］)</p>
             <p>いわゆるキャラクターを売りにし、漠然とした幸福感を前提としたキャラゲーでは中々類を見ないエピソードであり<br>
               またそういった前提条件を無意識に受け入れている者にとってもこのコミュは中々の劇物だろう。<br>
@@ -1001,9 +1002,9 @@
               悪く言えば、常に自分の事を二の字にしてしまうとも捉えられる。<br>
               これはアンティーカのメンバーと触れ合っている時には顕著な特性だ。
             </p>
-            <div><img src="images/mitumine3.jpg" class="mituimg 3"></div>
-            <div><img src="images/mitumine4.jpg" class="mituimg 4"></div>
-            <div><img src="images/mitumine5.jpg" class="mituimg 5"></div>
+            <div><img src="images/mitumine3.jpg" class="mituimg 3" alt="mitumine"></div>
+            <div><img src="images/mitumine4.jpg" class="mituimg 4" alt="mitumine"></div>
+            <div><img src="images/mitumine5.jpg" class="mituimg 5" alt="mitumine"></div>
             <p>(【等身大のレイニーデイ】の一幕にて。焦った恋鐘の様子を抑えた三峰は咲耶に感謝されるが、その際に本心を隠してとぼけている)</p>
             <p>そんな彼女がお調子者として他人と会話する時はひょうひょうとしてノリもよく<br>
               その場の雰囲気を楽しくさせようとし、時にはグループの人間のブレーキング等も行ったりする為<br>
@@ -1015,10 +1016,10 @@
               その時の三峰はペルソナを剥がし心を握るような声色でPに迫ってくる。<br>
               このときの彼女はいままでの態度とは打って変わり、シャニPに対して特殊なアクションをけしかけたい場合にてその声色を顕わにする。<br>
             </p>
-            <div><img src="images/mitumine6.jpg" class="mituimg 6"></div>
-            <div><img src="images/mitumine7.jpg" class="mituimg 7"></div>
+            <div><img src="images/mitumine6.jpg" class="mituimg 6" alt="mitumine"></div>
+            <div><img src="images/mitumine7.jpg" class="mituimg 7" alt="mitumine"></div>
             <p>(【お願い、ただの少女がいい】にて)</p>
-            <div><img src="images/mitumine8.jpg" class="mituimg 8"></div>
+            <div><img src="images/mitumine8.jpg" class="mituimg 8" alt="mitumine"></div>
             <p>（【雨色上機嫌】にて）</p>
             <p>そして、その変化を目の当たりにしたプレイヤーは彼女の事を一気に魅力的だと感じる。<br>
               もう少し俗っぽい言い方をするならば「ガチ恋する」「沼に堕ちていく」という感じだろうか。<br>
@@ -1036,7 +1037,7 @@
               そのポリシーは三峰結華曰く、「Pたんを信頼しているから」である。<br>
             </p>
             <p>（とんでもない理由で俺らを誑かすなあこの女…）</p>
-            <div><img src="images/mitumine9.jpg" class="mituimg 9"></div>
+            <div><img src="images/mitumine9.jpg" class="mituimg 9" alt="mitumine"></div>
             <p>(【お試し/みつゴコロ】にて。この後Pは三峰にしてやられる)</p>
             <p>この、「特有の不文律に則る」ということを逆手に利用した描き方で<br>
               なんてことのないお調子者の彼女をほんの少しのエッセンスで他18人に肩を並べる人間へと昇華している。<br>
@@ -1058,7 +1059,7 @@
               担当でなくとも彼女に一定以上の感情を抱いてしまえばどれかには当てはまると思う。<br>
               きっとNOT≠EQUALに触れるまでの内面は概ねこうであろう。<br>
             </p>
-            <div><img src="images/mitumine10.jpg" class="mituimg 10"></div>
+            <div><img src="images/mitumine10.jpg" class="mituimg 10" alt="mitumine"></div>
             <p>（参考資料）</p>
             <p>そして今回、自分がプレイヤーの傷心の根源を考えるにあたって注目したのは、「彼女をどういう風に愛していたか？」ということだ。<br>
               なので私は、プレイヤーはシャニマスのキャラに対し<br>
@@ -1098,9 +1099,9 @@
                 <li>顔が良い</li>
               </ul>
             </p>
-            <div><img src="images/mitumine11.png" class="mituimg 11"></div>
-            <div><img src="images/mitumine12.jpg" class="mituimg 12"></div>
-            <div><img src="images/mitumine13.png" class="mituimg 13"></div>
+            <div><img src="images/mitumine11.png" class="mituimg 11" alt="mitumine"></div>
+            <div><img src="images/mitumine12.jpg" class="mituimg 12" alt="mitumine"></div>
+            <div><img src="images/mitumine13.png" class="mituimg 13" alt="mitumine"></div>
             <p>といったあたりだろう。他にもいくつかあるだろうが割愛させてもらった。
               (カメ峰の笑顔ほんと好き)<br>
               これらは所謂「わかりやすい」属性だ。<br>
@@ -1182,27 +1183,27 @@
               つまり、もうこの時点で我々の期待は裏切られ、「属性」も失われ、一定さすら喪失している。<br>
               歩いていた一本道が唐突にぐらぐらな一本橋に変化している。<br>
             </p>
-            <div><img src="images/mitumine14.jpg" class="mituimg 14"></div>
-            <div><img src="images/mitumine15.jpg" class="mituimg 15"></div>
+            <div><img src="images/mitumine14.jpg" class="mituimg 14" alt="mitumine"></div>
+            <div><img src="images/mitumine15.jpg" class="mituimg 15" alt="mitumine"></div>
             <p>そしてコミュ２で彼女はプレイヤーを突き放すような発言を行うが、このときのPのレスポンスはある意味で一定なものだ。<br>
               （I♡DOLLとかFANCY24ｇでこの部分にすごく気を遣うようになってるのはまた別のお話）
             </p>
-            <div><img src="images/mitumine16.jpg" class="mituimg 16"></div>
-            <div><img src="images/mitumine17.jpg" class="mituimg 17"></div>
-            <div><img src="images/mitumine18.jpg" class="mituimg 18"></div>
+            <div><img src="images/mitumine16.jpg" class="mituimg 16" alt="mitumine"></div>
+            <div><img src="images/mitumine17.jpg" class="mituimg 17" alt="mitumine"></div>
+            <div><img src="images/mitumine18.jpg" class="mituimg 18" alt="mitumine"></div>
             <p>(「結華って呼ばないで欲しい」に対するシャニPの返答の一部。<br>
               プレイヤーからすれば大分ショッキングな発言にもシャニＰは真摯に対応する)<br>
               ここではキャラクターに自分を否定されるという追い打ちをかけられ<br>
               更にはシャニＰの真摯な姿勢と、我々のショッキングな心理とに乖離が生じている状態になっている。<br>
               そしてコミュ３でやっと和解するのだが、なぜそうなったか分かりやすい説明はせず、必要最低限のテキストと情緒的な演出で真をぼかされて終わる。<br>
             </p>
-            <div><img src="images/mitumine19.jpg" class="mituimg 19"></div>
+            <div><img src="images/mitumine19.jpg" class="mituimg 19 " alt="mitumine"></div>
             <p>このやりとり理解するには、それなりの考察に裏打ちされた行間の把握力を要し<br>
               それは属性で型を嵌めてゆったりと楽しむような記号化タイプには気難しい作業だ。<br>
               きっといままでのコミュを見て漠然と楽しいと思っていた者は、何かもやのような不安感に包まれる感覚に陥ると思われる。<br>
               そしてコミュ４、Trueでいつも通り(厳密には異なるが)の結華へと戻る。<br>
             </p>
-            <div><img src="images/mitumine20.jpg" class="mituimg 20"></div>
+            <div><img src="images/mitumine20.jpg" class="mituimg 20" alt="mitumine"></div>
             <p>ひとまず元に戻った事にプレイヤーは一応安堵はするものの、多大なショックと漠然とした不理解感に包まれてしまい、こころにしこりが残ってしまう。<br>
               カードを手に入れ、「三峰結華との恋人ごっこ」という構図を期待していた人は<br>
               その期待を冒頭１秒で奪われ、またその重苦しい展開に胃は重くなっていく。<br>
@@ -1285,7 +1286,7 @@
               証拠と呼ぶには図々しいが、この限定が出る直前に行われていたサマーキャンペーンの投票イベントでは<br>
               一位を取った時のセリフにて括弧付きで「演じて」はいたものの『大好き』と述べている。<br>
             </p>
-            <div><img src="images/mitumine21.jpg" class="mituimg 21"></div>
+            <div><img src="images/mitumine21.jpg" class="mituimg 21" alt="mitumine"></div>
             <p>（こんな結末を後ろに控えさせておきながら、まるで何も分かりませんよとでも言わんばかりにこのセリフを三峰に言わせた運営のゲスさたるや…）
               果たしてこのセリフをどう受け取るかはプレイヤー次第だが、少なくともこのセリフを聞いて無下に扱う事はないと思われる。<br>
               それに、何も知らぬままにこれを見ても「まあPドルに対して少なからずそういう部分もあるんだろうなあ」という気持ちが助長されたり<br>
@@ -1299,8 +1300,8 @@
               そしてそれを噛み砕いている機微タイプは「その感情に応えないというのはある種彼女への裏切りだ」とも感じているのかもしれないし<br>
               または彼女への責任感を感じているとも言えるだろう。<br>
             </p>
-            <div><img src="images/mitumine22.png" class="mituimg 22"></div>
-            <div><img src="images/mitumine23.png" class="mituimg 23"></div>
+            <div><img src="images/mitumine22.png" class="mituimg 22" alt="mitumine"></div>
+            <div><img src="images/mitumine23.png" class="mituimg 23" alt="mitumine"></div>
             <p>(三峰についてエゴサすると「湿度」という単語はとっても散見される。気になる人は是非やってみよう。)
               つまり機微タイプは、3周目のカードが来ると分かっていても、淡い恋心や恋人ごっこの描写への期待は捨てきれず、おきまりの構図の中での話の発展を無意識に予想していたのだ。
             </p>
@@ -1344,8 +1345,8 @@
               そしてそれを裏付けるかのように、プロデューサーと三峰とのお話において<br>
               シャニマスPは結華の淡い恋心へ正式に応えるような行動や言動を全然しないのだ。<br>
             </p>
-            <div><img src="images/mitumine24.jpg" class="mituimg 24"></div>
-            <div><img src="images/mitumine25.jpg" class="mituimg 25"></div>
+            <div><img src="images/mitumine24.jpg" class="mituimg 24" alt="mitumine"></div>
+            <div><img src="images/mitumine25.jpg" class="mituimg 25" alt="mitumine"></div>
             <p>（【それなら目をつぶりましょう】にて。</p>
             <p>店員にカップルと間違えられた際にそのままカップルの体を装う起点によって危機を乗り越えた後の二人の場面。<br>
               三峰はその起点を『日頃のシミュレーションの賜物』と自賛するが、プロデューサーはそれを冗談と捉えている。<br>
@@ -1354,9 +1355,9 @@
               他にもこのような淡い恋心と恋人ごっこの構図は散見される。<br>
               似たようなもので、NOT EQUAL以前以後を見比べるのならば、バレンタインチョコの例はわかりやすいだろう。<br>
             </p>
-            <div><img src="images/mitumine26B.png" class="mituimg 26"></div>
+            <div><img src="images/mitumine26B.png" class="mituimg 26" alt="mitumine"></div>
             <p>（2019年のバレンタインチョコ。こちらはNOT EQUAL以前）</p>
-            <div><img src="images/mitumine27B.jpg" class="mituimg 27"></div>
+            <div><img src="images/mitumine27B.jpg" class="mituimg 27" alt="mitumine"></div>
             <p>(2020年のバレンタインチョコ。こちらはNOT EQUAL以後)</p>
             <p>以上を踏まえれば、彼女の淡い恋心に寄り添おうとした場合の機微タイプは本カードに向き合うにあたってとんでもない地雷行為になってしまっていた<br>
               人参を目の前にぶら下げながら崖に向かって走る馬と化してしまったのだ。
@@ -1367,11 +1368,11 @@
               プロデューサーは「そんなの決まってる。結華のプロデューサーだからだ」と発言する。ここで結華は「正解」を発見し、4話目において、結華は「通常営業」を行う。<br>
               4話目でのプロデューサーは、結華の葛藤について詳しく存ぜぬ、といった様子だ。<br>
             </p>
-            <div><img src="images/mitumine28.jpg" class="mituimg 28"></div>
-            <div><img src="images/mitumine29.jpg" class="mituimg 29"></div>
-            <div><img src="images/mitumine30.jpg" class="mituimg 30"></div>
-            <div><img src="images/mitumine31.jpg" class="mituimg 31"></div>
-            <div><img src="images/mitumine32.jpg" class="mituimg 32"></div>
+            <div><img src="images/mitumine28.jpg" class="mituimg 28" alt="mitumine"></div>
+            <div><img src="images/mitumine29.jpg" class="mituimg 29" alt="mitumine"></div>
+            <div><img src="images/mitumine30.jpg" class="mituimg 30" alt="mitumine"></div>
+            <div><img src="images/mitumine31.jpg" class="mituimg 31" alt="mitumine"></div>
+            <div><img src="images/mitumine32.jpg" class="mituimg 32" alt="mitumine"></div>
             <p>見てもらえばある程度分かるように、NOT EQUALではこれまでのカードと打って変わってドライな雰囲気で話が進むものの<br>
               プロデューサーの姿勢や態度はいつもと変わらず、変わったのは結華の雰囲気のみとなっている。<br>
               そして、このカードの内容が意図するところは今までの関係性を否定するといったもので、それは(これは一種の自己解釈だが)<br>
@@ -1386,10 +1387,10 @@
               もしくはブラッシュアップされたと示されてしまい、そしてそれを受け入れた結華は4話目スカイツリーにて「アイドル」である事をプロデューサーの目前で誓約し<br>
               trueコミュや駆け寄ったファンの少女の質問に三峰結華はあくまで彼のビジネスパートナーであると応えるのだ。<br>
             </p>
-            <div><img src="images/mitumine33.jpg" class="mituimg 33"></div>
-            <div><img src="images/mitumine34.jpg" class="mituimg 34"></div>
-            <div><img src="images/mitumine35.jpg" class="mituimg 35"></div>
-            <div><img src="images/mitumine36.jpg" class="mituimg 36"></div>
+            <div><img src="images/mitumine33.jpg" class="mituimg 33" alt="mitumine"></div>
+            <div><img src="images/mitumine34.jpg" class="mituimg 34" alt="mitumine"></div>
+            <div><img src="images/mitumine35.jpg" class="mituimg 35" alt="mitumine"></div>
+            <div><img src="images/mitumine36.jpg" class="mituimg 36" alt="mitumine"></div>
             <p>これはプレイヤーが期待していたような淡い恋心と恋人ごっこの構図の破綻でもあり、（執筆当時はまだ4周目の三峰結華PSSRのお話を見ていないので断言は出来ないが）<br>
               これ以降何かターニングポイントとなるお話が描かれない限り三峰結華が恋人ごっこの範疇をせわしく動き回ったり<br>
               淡い恋心を押し出すことはあまりしなくなるだろうというのは容易に想像が付くだろう。<br>
@@ -1454,7 +1455,7 @@
               それは、緊急ライブを校庭で行った後、後夜祭の熱に浮かれる生徒達の姿を見て3人が達成感を感じる中<br>
               灯織と真乃がめぐるのことを「特別なめぐるではなく、一人の人間としてのめぐるが好きだ」と告げて終わりとなる。<br>
             </p>
-            <div><img src="images/mitumine37.jpg" class="mituimg 37"></div>
+            <div><img src="images/mitumine37.jpg" class="mituimg 37" alt="mitumine"></div>
             <p>(Star`n dew by me［呼吸のソルフェージュ］にて)</p>
             <p>これだけ聞くとなんて事ない「良い話」なのだが、実はかなりシリアスなテーマをイベント中に描写しているのだ。<br>
               そのテーマを大きく扱った時のコミュ名は、F.ニーチェの一節から引用された「invent laughter」というもの。<br>
@@ -1465,16 +1466,16 @@
               Friedrich Nietzsche (フリードリヒ・ニーチェ)<br>
             </p>
             <p>という言説の一部から来ている。</p>
-            <div><img src="images/mitumine38.jpg" class="mituimg 38"></div>
+            <div><img src="images/mitumine38.jpg" class="mituimg 38" alt="mitumine"></div>
             <p>(star`n dew by me コミュ［invent laughter］にて)</p>
             <p>これは天真爛漫でおしゃべり好きな友達の多い八宮めぐるのスター性は孤独という状況下で養われた努力の賜物である事の示唆といっても差し支えないだろう。
               そしてその孤独な過去を裏付けるのは、【チエルアルコは流星の】の水槽に一匹漂う熱帯魚に語りかけためぐるの様子と、イベントコミュでの真乃と灯織による「特別なめぐるではなく、一人の人間としてのめぐるが好き」という発言に涙を流しためぐるの歓喜だ。
               更に、【チエルアルコは流星の】にはめぐるがハーフである事で浮いてしまっていた事の隠喩さえ含まれている。
               これらを踏まえると、めぐるにはハーフというマイノリティな属性によって心理的なゾーニングを感じ、それによって孤独に苛まれた過去があるという冷酷な現実をめぐるは経験したとも解釈出来よう。
             </p>
-            <div><img src="images/mitumine39.jpg" class="mituimg 39"></div>
+            <div><img src="images/mitumine39.jpg" class="mituimg 39" alt="mitumine"></div>
             <p>（【チエルアルコは流星の】［同調の水、されど］にて）</p>
-            <div><img src="images/mitumine40.jpg" class="mituimg 40"></div>
+            <div><img src="images/mitumine40.jpg" class="mituimg 40" alt="mitumine"></div>
             <p>(【チエルアルコは流星の】［異邦の青、浮遊する］にて。</p>
             <p>コミュ名もさながら、内容も大正時代にやってきたブルーアイの少女という役柄に対して同情するめぐるという、やはりハーフ属性によるゾーニングを思わせるようなものになっている)<br>
               仮にハーフの部分が怪しいと思っても、孤独という彼女の今を知る人にとって対極な境遇をめぐるが経験した事はほぼ確実と言っていい。<br>
@@ -1500,7 +1501,7 @@
               今ではそういった発言や態度を取る回数は激減し、むしろ他人との距離感を上手く調節し、場の雰囲気を維持する事に徹して自分を操る事さえある。<br>
               また彼女自信が内側に秘めていた人間としての長所を発揮する場面さえ度々見られるようになってきた。<br>
             </p>
-            <div><img src="images/mitumine41.jpg" class="mituimg 41"></div>
+            <div><img src="images/mitumine41.jpg" class="mituimg 41" alt="mitumine"></div>
             <p>(初期の灯織と今年出た【星合アステリズム】における灯織)</p>
             <p>まためぐるの例示においても、イベントでイルミネメンバーから自分の存在を再認可される事で<br>
               やっと孤独だった事へのコンプレックスや密かに感じ続けていた孤独への恐怖から解放されたのだと思う。<br>
@@ -1539,7 +1540,7 @@
         </div>
       </div>
       <div class="kiriko all">
-        <a name="kiriko"></a>
+        <a id="kiriko"></a>
         <h3 class="name">〇幽谷霧子</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -2243,20 +2244,20 @@
       </div>
     </div>
     <div class="houkago">
-      <a name="houkago"></a>
+      <a id="houkago"></a>
       <div class="idlelist3">
         <h2 class="midasi">放課後クライマックスガールズ</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#kaho"><li>小宮果穂</li></a>
-          <a href="#tyoko"><li>園田智代子</li></a>
-          <a href="#jyuri"><li>西城樹里</li></a>
-          <a href="#rinze"><li>杜野凛世</li></a>
-          <a href="#natuha"><li>有栖川夏葉</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#kaho">小宮果穂</a>
+          <a href="#tyoko">園田智代子</a>
+          <a href="#jyuri">西城樹里</a>
+          <a href="#rinze">杜野凛世</a>
+          <a href="#natuha">有栖川夏葉</a>
+        </div>
       </div>
       <div class="kaho all">
-        <a name="kaho"></a>
+        <a id="kaho"></a>
         <h3 class="name">〇小宮果穂</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2272,7 +2273,7 @@
         </div>
       </div>
       <div class="tyoko all">
-        <a name="tyoko"></a>
+        <a id="tyoko"></a>
         <h3 class="name">〇園田智代子</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2381,7 +2382,7 @@
         </div>
       </div>
       <div class="jyuri all">
-        <a name="jyuri"></a>
+        <a id="jyuri"></a>
         <h3 class="name">〇西城樹里</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2399,7 +2400,7 @@
         </div>
       </div>
       <div class="rinze all">
-        <a name="rinze"></a>
+        <a id="rinze"></a>
         <h3 class="name">〇杜野凛世</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2557,7 +2558,7 @@
         </div>
       </div>
       <div class="natuha all">
-        <a name="natuha"></a>
+        <a id="natuha"></a>
         <h3 class="name">〇有栖川夏葉</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2577,18 +2578,18 @@
       </div>
     </div>
     <div class="arusuto">
-      <a name="arusuto"></a>
+      <a id="arusuto"></a>
       <div class="idlelist4">
         <h2 class="midasi">アルストロメリア</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#amana"><li>大崎甘奈</li></a>
-          <a href="#tenka"><li>大崎甜花</li></a>
-          <a href="#tiyuki"><li>桑山千雪</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#amana">大崎甘奈</a>
+          <a href="#tenka">大崎甜花</a>
+          <a href="#tiyuki">桑山千雪</a>
+        </div>
       </div>
       <div class="amana all">
-        <a name="amana"></a>
+        <a id="amana"></a>
         <h3 class="name">〇大崎甘奈</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -2670,7 +2671,7 @@
               しかしイタズラと言っても実害を与えるようなものは無く、個性的な容姿も含めて自分に注意を引きたいという意図が感じ取れます。<br>
               実際にPが摩美々のイタズラなどに対し、（父親のように）注意したり叱ったりすると少し機嫌が良くなり、朝コミュでもそうした選択肢を選ぶと好感度が上がります。<br>
               逆に受け流すような反応を示すとつまらなそうにします。このように「どうしたら自分に興味を持ってもらえるか」をずっと意識してきたために<br>
-              他者の心の機微を読み取る観察眼と気配り上手な一面が備わったのだと考えられます。最近のイベントや感謝祭編では摩美々が他のアイドルのフォロー役として立ち回る場面が印象的です。<br>
+              他者の心の機微を読み取る観察眼と気配り上手な一面が備わっ��のだと考えられます。最近のイベントや感謝祭編では摩美々が他のアイドルのフォロー役として立ち回る場面が印象的です。<br>
               二人は行動原理に似た欲求を持ちながら、一方はいい子でもう一方は悪い子になるという対照的な道を選びました。<br>
               それだけではありません。甘奈は自分を見てくれる存在はずっと近くにいたがアイドル活動を通して初めてそれが離れる可能性に直面し<br>
               摩美々は自分を見てくれる存在にずっと飢えていたがアイドル活動を通してＰやアンティーカのメンバーと出会った、といった風に現在真逆の状況に置かれています。<br>
@@ -2866,7 +2867,7 @@
         </div>
       </div>
       <div class="tenka all">
-        <a name="tenka"></a>
+        <a id="tenka"></a>
         <h3 class="name">〇大崎甜花</h3>
         <div class="kiji">
           <div class="id">あいまいPさん(＠2F6WqdOwZ6Cwee6)</div>
@@ -2893,7 +2894,7 @@
         </div>
       </div>
       <div class="tiyuki all">
-        <a name="tiyuki"></a>
+        <a id="tiyuki"></a>
         <h3 class="name">〇桑山千雪</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -3028,19 +3029,19 @@
       </div>
     </div>
     <div class="Stray">
-      <a name="stray"></a>
+      <a id="stray"></a>
       <div class="idlelist5">
         <h2 class="midasi">Straylight</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#asahi"><li>芹沢あさひ</li></a>
-          <a href="#huyuko"><li>黛冬優子</li></a>
-          <a href="#ai"><li>和泉愛依</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#asahi">芹沢あさひ</a>
+          <a href="#huyuko">黛冬優子</a>
+          <a href="#ai">和泉愛依</a>
+        </div>
       </div>
       <h2 class="midasi"></h2>
       <div class="asahi all">
-        <a name="asahi"></a>
+        <a id="asahi"></a>
         <h3 class="name">〇芹沢あさひ</h3>
         <div class="kiji">
           <div class="id">あいまいPさん(＠2F6WqdOwZ6Cwee6)</div>
@@ -3292,7 +3293,7 @@
               秘密基地とのお別れです。<br>
               色々と充実する中であさひは無人島と呼び出した秘密基地ですが、ふとプロデューサーがその無人島に対し例え話を始めます。<br>
               無人島に船が来て、その船には本来の島の所有者であるおじいさんが乗っていて、その無人島はあさひの島ではないと語ります。<br>
-              そんな設定はない！と反論するあさひを抑えながら、だからもうやめようと言わず、おじいさんがびっくりすると思わないか？と優しく諭し<br>
+              そんな設定はない！と反論するあさひを抑えながら、だからもうやめようと言わず、おじいさんがびっくりすると思わないか？と優し��諭し<br>
               一方であさひがここまで作ってきた秘密基地を褒め、すっごくかっこいい場所だと言ってあげます。<br>
               そんな両方の気持ちがあるからこそ、この無人島はプロデューサーが壊したくないし、他の人にも壊されたくないと続けます。<br>
               基地を作るのはダメと言いたいのかと返すあさひですが、プロデューサーの口からはダメと言わず、あさひ自身がよく考えて欲しいと判断を委ねます。<br>
@@ -3344,7 +3345,7 @@
         </div>
       </div>
       <div class="huyuko all">
-        <a name="huyuko"></a>
+        <a id="huyuko"></a>
         <h3 class="name">〇黛冬優子</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -3368,7 +3369,7 @@
         </div>
       </div>
       <div class="ai all">
-        <a name="ai"></a>
+        <a id="ai"></a>
         <h3 class="name">〇和泉愛依</h3>
         <div class="kiji">
           <div class="id">リップさん(@hayatoraRIPPU)</div>
@@ -3386,19 +3387,19 @@
       </div>
     </div>
     <div class="nokutiru">
-      <a name="nokutiru"></a>
+      <a id="nokutiru"></a>
       <div class="idlelist6">
         <h2 class="midasi">ノクチル</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#touru"><li>浅倉透</li></a>
-          <a href="#madoka"><li>樋口円香</li></a>
-          <a href="#koito"><li>福丸小糸</li></a>
-          <a href="#hina"><li>市川雛菜</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#touru">浅倉透</a>
+          <a href="#madoka">樋口円香</a>
+          <a href="#koito">福丸小糸</a>
+          <a href="#hina">市川雛菜</a>
+        </div>
       </div>
       <div class="touru all">
-        <a name="touru"></a>
+        <a id="touru"></a>
         <h3 class="name">〇浅倉透</h3>
         <div class="kiji">
           <div class="id">蟹鍋三昧さん(@crabpoTorDie)</div>
@@ -3524,7 +3525,7 @@
         </div>
       </div>
       <div class="madoka all">
-        <a name="madoka"></a>
+        <a id="madoka"></a>
         <h3 class="name">〇樋口円香</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -3544,7 +3545,7 @@
         </div>
       </div>
       <div class="koito all">
-        <a name="koito"></a>
+        <a id="koito"></a>
         <h3 class="name">〇福丸小糸</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -3565,7 +3566,7 @@
         </div>
       </div>
       <div class="hina all">
-        <a name="hina"></a>
+        <a id="hina"></a>
         <h3 class="name">市川雛菜</h3>
         <div class="kiji">
           <div class="id">すらが録さん</div>
@@ -3630,19 +3631,19 @@
       </div>
     </div>
     <div class="283">
-      <a name="283"></a>
+      <a id="production"></a>
       <div class="idlelist7">
         <h2 class="midasi">283プロダクション</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#283p"><li>283プロダクション</li></a>
-          <a href="#pro"><li>プロデューサー</li></a>
-          <a href="#hazuki"><li>七草はづき</li></a>
-          <a href="#syatyou"><li>天井努</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#283p">283プロダクション</a>
+          <a href="#pro">プロデューサー</a>
+          <a href="#hazuki">七草はづき</a>
+          <a href="#syatyou">天井努</a>
+        </div>
       </div>
       <div class="p283p all">
-        <a name="283p"></a>
+        <a id="283p"></a>
         <h3 class="name">〇283プロダクション</h3>
         <div class="kiji">
           <div class="id">丸麺製菓さん(@Sircles_confc)</div>
@@ -3691,7 +3692,7 @@
               これについて月岡恋鐘の水着衣装より話していきたい。
             </p>
             <div><img src="images/mizugi1.png" alt="mizugi1" class="mizugiimg 1"></div>
-            <p>2019年有償水着衣装(アンティーカ&イルミネ)</p>
+            <p>2019年有償水着衣装(アンティーカ&amp;イルミネ)</p>
             <p>まず恋鐘の水着衣装についてだが、水着の生地はショッキングピンクに彩られていて、白のレース柄のアウターに花冠を加えた非常にお洒落なコーデである。<br>
               髪型も普段の下げおろしではなく三つ編みでまとめてある。個人的な感想としては「マジでかわいいな恋鐘」に尽きる。<br>
               そんなお洒落な衣装に身を包む恋鐘だが、なによりも注目して欲しいのが胸のフリルについてである。<br>
@@ -3725,7 +3726,7 @@
               通常の私服が持つファッションの幅へとより漸近しているように感じるのだ。
             </p>
             <div><img src="images/mizugi2.png" alt="mizugi2" class="mizugiimg2"></div>
-            <p>2019年有償水着衣装(アンティーカ&放クラ)</p>
+            <p>2019年有償水着衣装(アンティーカ&amp;放クラ)</p>
             <p>三峰であったらガッツリと肌を覆う白のアウターとホットパンツといった<br>
               普段のジャージ姿をそのまま持ってきたようなカジュアルなコーデに、トップを紫にして全体の雰囲気に重みを持たせている。<br>
               摩美々であったら基調を黒に揃え、キャップを被りメッシュで肩とバストを覆うという、どこかトリッキーナイトの私服を思わせる軽やかなコーデ。<br>
@@ -3800,7 +3801,7 @@
         </div>
       </div>
       <div class="pro all">
-        <a name="pro"></a>
+        <a id="pro"></a>
         <h3 class="name">〇プロデューサー</h3>
         <div class="kiji">
           <div class="id">ピノさん(@Pino_Lvsgr25LLp)</div>
@@ -3863,7 +3864,7 @@
         </div>
       </div>
       <div class="hazuki all">
-        <a name="hazuki"></a>
+        <a id="hazuki"></a>
         <h3 class="name">〇七草はづき</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -3888,7 +3889,7 @@
         </div>
       </div>
       <div class="syatyou all">
-        <a name="syatyou"></a>
+        <a id="syatyou"></a>
         <h3 class="name">〇天井努</h3>
         <div class="kiji">
           <div class="id">匿名希望さん</div>
@@ -3924,17 +3925,17 @@
       </div>
     </div>
     <div class="andmore">
-      <a name="andmore"></a>
+      <a id="andmore"></a>
       <div class="idlelist8">
         <h2 class="midasi">AndMore</h2>
         <p class="small">(クリックするとスクロールします)</p>
-        <ul>
-          <a href="#bonus"><li>Bounus Contents</li></a>
-          <a href="#atogaki"><li>あとがき</li></a>
-        </ul>
+        <div class="idlelist">
+          <a href="#bonus">Bounus Contents</a>
+          <a href="#atogaki">あとがき</a>
+        </div>
       </div>
       <div class="bonus all">
-        <a name="bonus"></a>
+        <a id="bonus"></a>
         <h3 class="name">〇Bounus Contents</h3>
         <div class="kiji">
           <div class="id">☆お気持ち表明投稿件数ランキング</div>
@@ -3971,7 +3972,7 @@
       </div>
     </div>
     <div class="atogaki all">
-      <a name="atogaki"></a>
+      <a id="atogaki"></a>
       <h3 class="name">あとがき</h3>
       <h2>☆協賛：283Productionクリエーター部様</h2>
       <div class="kiji">
@@ -3994,7 +3995,7 @@
             皆様の迸る感情…溢れかえる程の情熱…狂おしい程の情念…煮え滾る程の愛…愛ですよ…それらを括って称する『お気持ち』堪能させて頂きました、とっくりと。<br>
             読み物としても楽しく、これだけの熱意を抱かれながら突き進むシャニマスというコンテンツに、いやはや私もまだまだ食い付いていきたいなぁと再認識させて頂ける企画で御座いました。<br>
             このような企画に一枚噛めたのも、主催して下さったえび蟹サンとありかサンのお陰に他なりません。本当に感謝致します。<br>
-            もしまたこういったものに携われる機会を頂けるなら、それはまたこの上ない喜びです！！<br>
+            もしまたこういっ��ものに携われる機会を頂けるなら、それはまたこの上ない喜びです！！<br>
             そしてこのあとがきを読みながら次こそは俺とて参加すると意気込む皆様、お気持ちの場は永劫ですよ！<br>
             沢山の媒体で、今後もシャニマスへの愛を！見せて下さいな！！<br>
           </p>
@@ -4055,8 +4056,8 @@
       </div>
     </div>
   </div>
+  <footer>
+    <small>&copy; 2020 さまーいれーす </small>
+  </footer>
 </body>
-<footer>
-  <small>&copy; 2020 さまーいれーす </small>
-</footer>
 </html>
