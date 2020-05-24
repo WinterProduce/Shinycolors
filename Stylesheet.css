@@ -72,6 +72,7 @@ ul li{
     margin: 0;
 }
 
+
 /* メイン記事の装飾 */
 .main{
     max-width: 900px;
@@ -125,6 +126,9 @@ h3.name{
 .meguru{
     border: dashed 2px #ffe012;
     background-color: #f8f4d6;
+}
+.meguru>.kiji{
+    border-bottom:dashed 2px #ffe012;
 }
 
 /* 恋鐘ちゃん */
@@ -362,7 +366,7 @@ h3.name{
 }
 
 /* お気持ち中の写真の装飾 */
-.mituimg, .tiyukiimg, .asahiimg, .mizugiimg, .kirikoimg{
+.mituimg, .tiyukiimg, .asahiimg, .mizugiimg, .kirikoimg, .mamimituimg, .hioriimg{
     width: 60%;
     height: 60%;
 }
@@ -567,6 +571,12 @@ small{
         margin: auto;
         width: 100%;
     }
+    .note{
+        font-size: 80%;
+    }
+    .note a{
+        text-decoration: none;
+    }
 }
 
 /* タブレット用 */
@@ -636,6 +646,12 @@ small{
         margin: auto;
         width: 100%;
     }
+    .note{
+        font-size: 80%;
+    }
+    .note a{
+        text-decoration: none;
+    }
 }
 /* PC用 */
 @media screen and (min-width: 767px){
@@ -701,5 +717,11 @@ small{
         max-width: 450px;
         margin: auto;
         width: 100%;
+    }
+    .note{
+        font-size: 70%;
+    }
+    .note a{
+        text-decoration: none;
     }
 }
