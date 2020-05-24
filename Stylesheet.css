@@ -27,6 +27,10 @@ body{
     height: auto;
 }
 
+.ura{
+    margin: 0 0 10% 0;
+}
+
 /* 目次の装飾 */
 .mokuji{
     font-size: 150%;
@@ -480,6 +484,13 @@ small{
     text-align: center;
     font-size: 110%;
     color: #448ccb;
+}
+
+.credit{
+    padding: 2% 2% 2% 2%;
+}
+.credit>div{
+    margin: 3% 0 3% 0;
 }
 
 /* レスポンシブCSS */
