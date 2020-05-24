@@ -13,12 +13,18 @@ body{
     font-family: 'irohamaru';
     overflow-wrap: break-word;
     word-wrap: break-word;
+    margin: 0;
 }
 /* 表紙画像の装飾 */
 .Hyousi{
     text-align: center;
     margin: 0;
     width: 100%;
+}
+.Urahyousi{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 /* 目次の装飾 */
@@ -463,9 +469,17 @@ h3.name{
     color: #aad64c;
 }
 /* Footerの装飾 */
-.credit{
+footer{
+    padding: 1.5% 0 1.5% 0;
+    margin:3% 0 0 0;
+    text-align: center;
+    background-color: #ecf3fa;
+}
+
+small{
     text-align: center;
     font-size: 110%;
+    color: #448ccb;
 }
 
 /* レスポンシブCSS */
@@ -474,14 +488,14 @@ h3.name{
     .main{
         font-size: 100%;
     }
-        p{
+    p{
         line-height:35px;
     }
     .mokuji{
         font-size: 100%;
     }
     .modoru1{
-        font-size: 100%;
+        font-size: 110%;
         position: fixed;
         top: 0;
         right: 0;
@@ -502,7 +516,7 @@ h3.name{
         border-bottom: 16px solid #448ccb;
     }
     .modoru2{
-        font-size: 100%;
+        font-size: 110%;
         position: fixed;
         right: 0;
         bottom: 0;
@@ -525,6 +539,22 @@ h3.name{
     .modoru1 a,.modoru2 a{
         color: #448ccb;
         text-decoration: none;
+    }
+
+    .houkago>.midasi, .irumine>.midasi, .arusuto>.midasi, .p283p>.midasi{
+        font-size: 90%;
+    }
+
+    .credit{
+        font-size: 90%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 450px;
+        margin: auto;
+        width: 100%;
     }
 }
 
@@ -585,6 +615,16 @@ h3.name{
         color: #448ccb;
         text-decoration: none;
     }
+    .credit{
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 450px;
+        margin: auto;
+        width: 100%;
+    }
 }
 /* PC用 */
 @media screen and (min-width: 767px){
@@ -597,8 +637,8 @@ h3.name{
     .modoru1{
         font-size: 150%;
         position: fixed;
-        bottom: 0;
-        right: 0;
+        bottom: 1%;
+        right: 1%;
         padding: 1%;
         color: #448ccb;
         background: #ecf3fa;
@@ -618,8 +658,8 @@ h3.name{
     .modoru2{
         font-size: 150%;
         position: fixed;
-        bottom: 0;
-        left: 0;
+        bottom: 1%;
+        left: 1%;
         padding: 1%;
         color: #448ccb;
         background: #ecf3fa;
@@ -639,5 +679,16 @@ h3.name{
     .modoru1 a,.modoru2 a{
         color: #448ccb;
         text-decoration: none;
+    }
+    .credit{
+        text-align: center;
+        font-size: 110%;
+        color: #448ccb;
+        background: #ecf3fa;
+        border: dashed 2px #adcce8;
+        border-radius: 20px;
+        max-width: 450px;
+        margin: auto;
+        width: 100%;
     }
 }
