@@ -586,7 +586,7 @@ small{
         border: dashed 2px #adcce8;
         border-radius: 20px;
         text-align: center;
-        max-width: 450px;
+        max-width: 900px;
         margin: auto;
         width: 100%;
     }
@@ -661,7 +661,7 @@ small{
         border: dashed 2px #adcce8;
         border-radius: 20px;
         text-align: center;
-        max-width: 450px;
+        max-width: 900px;
         margin: auto;
         width: 100%;
     }
@@ -733,7 +733,7 @@ small{
         background: #ecf3fa;
         border: dashed 2px #adcce8;
         border-radius: 20px;
-        max-width: 450px;
+        max-width: 900px;
         margin: auto;
         width: 100%;
     }
