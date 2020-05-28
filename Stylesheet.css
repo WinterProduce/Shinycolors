@@ -519,6 +519,10 @@ small{
 /* レスポンシブCSS */
 /* スマホ用 */
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .wrapper{
+        max-width: 900px;
+        margin: auto;
+    }
     .main{
         font-size: 100%;
     }
@@ -600,6 +604,10 @@ small{
 
 /* タブレット用 */
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+    .wrapper{
+        max-width: 900px;
+        margin: auto;
+    }
     .main{
         font-size: 100%;
     }
@@ -674,8 +682,21 @@ small{
 }
 /* PC用 */
 @media screen and (min-width: 767px){
-    .Hyousi{
-        width: auto;
+    .wrapper{
+        display: flex;
+        padding: 5% 5% 0 5%;
+        max-width: 1500px;
+        /* margin: auto; */
+    }
+    .wrapper img{
+        width: 50%;
+        margin: auto;
+        min-width: 500px;
+        border-radius: 20px;
+    }
+    .mokuji{
+        width:65%;
+        margin-left: 5%;
     }
     p{
         line-height:40px;
