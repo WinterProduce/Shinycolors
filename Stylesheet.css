@@ -686,7 +686,8 @@ small{
         display: flex;
         padding: 5% 5% 0 5%;
         max-width: 1500px;
-        /* margin: auto; */
+        justify-content: center;
+        margin: auto;
     }
     .wrapper img{
         width: 50%;
